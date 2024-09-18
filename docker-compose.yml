@@ -16,4 +16,5 @@ services:
       - 8001:8001
     volumes:
       - ./my-express-app/src:/usr/src/app/src
+      - ./my-express-app/yarn.lock:/usr/src/app/yarn.lock
     command: yarn start
